@@ -31,7 +31,7 @@ const feedbackSchema = new mongoose.Schema({
   submittedAt: { type: Date, default: Date.now },
 });
 
-const Feedback = mongoose.model("Feedback", feedbackSchema);
+const Feedback = mongoose.model("Feedbacks", feedbackSchema);
 
 // API Routes
 app.post("/api/feedback", async (req, res) => {
